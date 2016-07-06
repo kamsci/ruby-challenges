@@ -21,18 +21,17 @@
 # 19
 # You got it in 7 tries
 
-
 puts "Can you guess my number? \n Guess a number between 1 and 100"
 guess = gets.chomp.to_i
 
-def guessing_game (guess)
+def guessing_game(guess)
   prng = Random.new
   answer = prng.rand(101)
 
   win = false
-  count = 0
+  count = 1
 
-  until win do
+  until win
     if guess < answer
       puts "The number is higher than #{guess}"
       count += 1

@@ -18,7 +18,7 @@ puts "Your current balance is #{balance}"
 
 active = true
 
-while active do
+while active
   puts "Choose one: check_balance, withdraw, deposit"
   action = gets.chomp
 
@@ -43,5 +43,3 @@ while active do
   end
 
 end
-
-

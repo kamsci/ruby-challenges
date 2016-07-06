@@ -19,7 +19,7 @@ input1 = gets.chomp.to_i
 puts "What is the second number?"
 input2 = gets.chomp.to_i
 
-def calculate (calculation, num1, num2)
+def calculate(calculation, num1, num2)
   answer = 0
   if calculation == 'add'
     answer = num1 + num2

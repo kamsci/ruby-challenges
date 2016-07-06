@@ -9,17 +9,16 @@
 puts "Enter a string"
 string = gets.chomp
 
-
-def reverse_string (string)
-  length = string.length/2
+def reverse_string(string)
+  length = string.length / 2
 
   for i in (0...length) do
     temp = string[i]
     temp2 = string[-(i + 1)]
     string[i] = temp2
-    string[-(i +1)] = temp
+    string[-(i + 1)] = temp
   end
   puts string
 end
 
-reverse_string (string)
+reverse_string string
